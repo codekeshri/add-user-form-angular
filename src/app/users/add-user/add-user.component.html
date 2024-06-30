@@ -1,0 +1,8 @@
+<h1>add-user works!</h1>
+<input type="text" placeholder="Enter Name" [(ngModel)]="name">
+<input type="text" placeholder="Enter Email" [(ngModel)]="email">
+
+<app-button (addUserEvent)="addUser()"></app-button>
+
+<app-user-list [users]="users"></app-user-list>
+
